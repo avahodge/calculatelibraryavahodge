@@ -3,6 +3,9 @@
 //@version 9-6-18
 public class DoMath {
 	public static void main (String[] args) {
-		System.out.println (Calculate.square (-3));
+		int number1 = 2;
+		int number2 = 1;
+		int number3 = 2;
+	System.out.println(toImproperFrac);
 	}
 }
