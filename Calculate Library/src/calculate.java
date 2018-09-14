@@ -25,4 +25,10 @@ public class calculate {
 		return (number1 * number3) + number2;
 		return "/" + number3;
 	}
+	public static int toMixedNum(int number1, int number2) {
+		return number1 / number2;
+		return " " + (number1 % number2);
+		return "/" + number2;
+	}
+	
 }

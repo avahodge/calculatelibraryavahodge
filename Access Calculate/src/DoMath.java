@@ -6,6 +6,6 @@ public class DoMath {
 		int number1 = 2;
 		int number2 = 1;
 		int number3 = 2;
-	System.out.println(toImproperFrac);
+	System.out.println
 	}
 }
