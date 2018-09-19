@@ -12,6 +12,9 @@ public class calculate {
 	public static double average(double a, double b) {
 		return (a * b) / 2;
 	}
+	public static double average(double a, double b, double c) {
+		return (a * b * c) / 3;
+	}
 	public static double toDegrees(double a) {
 		return (a * 180) / 3.14159;
 	}
@@ -27,4 +30,16 @@ public class calculate {
 		String str2 = String.valueOf(c);
 		return str1 + "/" + str2;
 	}
+	public static String toMixedNum(int a, int b) {
+		int number = (a / b);
+		int number2 = (a % b);
+		String str1 = String.valueOf(number);
+		String str2 = String.valueOf(number2);
+		return str1 + " " + str2 + "/" + b;
+	}
+	public static String foil(int a, int b, int c, int d, String e) {
+		
+	}
+	public static int isDivisibleBy(int a, int b) {
+		if ()
 }
