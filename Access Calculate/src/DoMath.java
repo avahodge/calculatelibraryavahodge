@@ -3,9 +3,12 @@
 //@version 9-6-18
 public class DoMath {
 	public static void main (String[] args) {
-		int number1 = 2;
-		int number2 = 1;
-		int number3 = 2;
-	System.out.println
+		int a = 2;
+		int b = 3;
+		int c = 6;
+		int d = -7;
+		String e = "n";
+		//	System.out.println(calculate.toMixedNum (a, b));
+		System.out.println(Calculate.foil (a, b, c, d, e));
 	}
 }
