@@ -55,4 +55,50 @@ public class Calculate {
 		String str3 = String.valueOf(number3);
 		return str1 + e + "^" + 2 + " + " + str2 + e + " + " + str3;
 	}
+	public static boolean isDivisibleBy(int a, int b) {
+		if (a % b != 0) {
+			return true; 
+		}
+		else {
+			return false;
+		}
+	}
+	public static double absValue(double a) {
+		if (a < 0) {
+			return a - (a * 2); 
+		}
+		else {
+			return a;
+		}
+	}
+	public static double max(double a, double b) {
+		if (a > b) {
+			return a;
+		}
+		else {
+			return b;
+		}
+	}
+	
+	public static double max(double a, double b, double c) {
+		if (a > b) {
+			if (a > c) {
+				return a;
+				}
+			}
+		if (b > a) {
+			if (b > c) {
+				return b;
+			}
+		}
+		if (c > a) {
+			if (c > b) {
+				return c;
+			}
+		}
+		else {
+			return a;
+			}
+		}
+	}
 }
