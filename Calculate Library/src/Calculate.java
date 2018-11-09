@@ -84,21 +84,32 @@ public class Calculate {
 		if (a > b) {
 			if (a > c) {
 				return a;
-				}
 			}
-		if (b > a) {
+		}
+		else if (b > a) {
 			if (b > c) {
 				return b;
 			}
 		}
-		if (c > a) {
+		else if (c > a) {
 			if (c > b) {
 				return c;
 			}
 		}
-		else {
+		return a;
+	}
+	
+	public static int min(int a, int b) {
+		if (a < b) {
 			return a;
-			}
+		}
+		else {
+			return b;
 		}
 	}
-}
+	public static double round2(double a) {
+		//come back to this smh my head
+		return a;
+	}
+	public static double exponent(double a, int b) {
+} //REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
