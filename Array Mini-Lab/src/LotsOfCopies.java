@@ -9,7 +9,7 @@ public class LotsOfCopies {
 public static void changeMe(int x, String str) {
 	x = 4;
 	str = "APCS";
-	//int[] arr = {1, 3, 5, 7, 9};
+	int[] arr = {1, 3, 5, 7, 9};
 	System.out.println("String str = " + str);
  }
 }
