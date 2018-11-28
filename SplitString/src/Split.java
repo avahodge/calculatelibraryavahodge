@@ -21,15 +21,14 @@ public class Split {
 //String arr0 = "I like apples!".split(" ");
 
 	 String arr0 = "I like apples!";
-	 Array.toString(arr0.split(" "));
-	 
-	 
+	 System.out.println(Arrays.toString(arr0.split(" ")));
 
 // it will split at spaces and return an array of ["I","like","apples!"]
 
 // Example 2: "I really like really red apples"split("really")
 
-	 
+	 String arr1 = "I really like really red apples!";
+	 System.out.println(Arrays.toString(arr1.split("really")));
 	 
 // it will split at the word "really" and return an array of ["I "," like ","red apples!"]
 
