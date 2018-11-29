@@ -8,8 +8,11 @@ public class FracCalc {
         // TODO: Read the input from the user and call produceAnswer with an equation
     	Scanner scanner = new Scanner(System.in);
     	System.out.println("Please type a fraction or mixed number.");
-    	String str1 = scanner.nextLine();
-    	System.out.println(produceAnswer(str1));
+    	while(scanner.nextLine() != "end") {
+    		String str1 = scanner.nextLine();
+    		System.out.println(produceAnswer(str1));
+    	}
+    	
     }
     
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
@@ -23,7 +26,7 @@ public class FracCalc {
     public static String produceAnswer(String input)
     { 
         // TODO: Implement this function to produce the solution to the input
-    	String[] something =input.split(" ");
+    	String[] something = input.split(" ");
     	return something[2];
     }
     // TODO: Fill in the space below with any helper methods that you think you will need
