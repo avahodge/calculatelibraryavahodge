@@ -8,10 +8,8 @@ public class FracCalc {
         // TODO: Read the input from the user and call produceAnswer with an equation
     	Scanner scanner = new Scanner(System.in);
     	System.out.println("Please type a fraction or mixed number.");
-    	while(scanner.nextLine() != "end") {
     		String str1 = scanner.nextLine();
     		System.out.println(produceAnswer(str1));
-    	}
     	
     }
     
