@@ -36,6 +36,8 @@ public class Split {
 
 //What happens if you "I reallyreally likeapples".split("really") ?
 
+	 String arr2 = "I reallyreally likeapples";
+	 System.out.println(Arrays.toString(arr2.split("really")));
 //Your task Part 1:
 
 /*Write a method that take in a string like
@@ -51,6 +53,11 @@ public class Split {
 * What if it's a fancy sandwich with multiple pieces of bread?
 
 */
+	 
+	/*Scanner scanner = new Scanner(System.in);
+		System.out.println("What's in your sandwich?");
+		String coolString = scanner.nextLine();
+		System.out.println(Arrays.toString(coolString.split("bread")));
 
 //Your task pt 2:
 
@@ -68,8 +75,13 @@ public class Split {
 
 */
 
- }
-
+		Scanner scanner2 = new Scanner(System.in);
+			System.out.println("What's in your sandwich?");
+			String anotherString = scanner2.nextLine();
+			System.out.println(Arrays.toString(anotherString.split("bread" + " ")));
+			
+ 		}
+ 
 }
 
 

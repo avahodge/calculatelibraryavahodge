@@ -10,7 +10,11 @@ public class FracCalc {
     	System.out.println("Please type a fraction or mixed number.");
     		String str1 = scanner.nextLine();
     		System.out.println(produceAnswer(str1));
-    	
+    
+    		while(!str1.equals("quit")) {
+    			System.out.println("Please type a fraction or mixed number.");
+    		str1 = scanner.nextLine();
+    		}
     }
     
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
