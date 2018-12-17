@@ -78,7 +78,7 @@ public class Split {
 		Scanner scanner2 = new Scanner(System.in);
 			System.out.println("What's in your sandwich?");
 			String anotherString = scanner2.nextLine();
-			System.out.println(Arrays.toString(anotherString.split("bread" + " ")));
+			String[] aSandwich = anotherString.split(" ");
 			
  		}
  

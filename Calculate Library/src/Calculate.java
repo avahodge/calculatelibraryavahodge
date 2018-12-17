@@ -3,8 +3,8 @@
 //@version 9-6-18
 public class Calculate {
 //returns the square of an integer
-	public static int square(int number) {
-		return number * number;
+	public static int square(int a) {
+		return a * a;
 	}
 	public static int cube(int number) {
 		return number * number * number;
@@ -108,8 +108,27 @@ public class Calculate {
 		}
 	}
 	public static double round2(double a) {
-		//come back to this smh my head
-		return a;
+		double b = a * 100;
+		double c = b + 0.5;
+		int cTwo = (int)c;
+		return (double)cTwo / 100;
+		
+		}	
+}
+	/*public static double exponent(double a, int b) {
+		
 	}
-	public static double exponent(double a, int b) {
-} //REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+	public static int factorial(int a) {
+		for(int i = 0; i > a; i++) {
+			
+		}
+	}
+	public static boolean isPrime(int a) {
+		
+	}
+	public static int gcf(int a, int b) {
+		
+	}
+	public static double sqrt(double a) {
+		
+	}*/

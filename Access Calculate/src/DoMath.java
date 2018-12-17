@@ -3,6 +3,6 @@
 //@version 9-6-18
 public class DoMath {
 	public static void main (String[] args) {
-		System.out.println(Calculate.max(600, 4000, 400));
+		System.out.println(Calculate.round2(12.3355));
 	}
 }
