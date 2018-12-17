@@ -79,7 +79,7 @@ public class Split {
 			System.out.println("What's in your sandwich?");
 			String anotherString = scanner2.nextLine();
 			String[] aSandwich = anotherString.split(" ");
-			
+			//come back to put that foreach in boiiiiiiiiii
  		}
  
 }
