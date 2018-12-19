@@ -56,7 +56,7 @@ public class Calculate {
 		return str1 + e + "^" + 2 + " + " + str2 + e + " + " + str3;
 	}
 	public static boolean isDivisibleBy(int a, int b) {
-		if (a % b != 0) {
+		if (a % b <= 0) {
 			return true; 
 		}
 		else {
@@ -114,21 +114,81 @@ public class Calculate {
 		return (double)cTwo / 100;
 		
 		}	
-}
-	/*public static double exponent(double a, int b) {
-		
+
+	public static double exponent(double a, int b) {
+		if(b < 0) {
+			throw new IllegalArgumentException("Cannot find the solution to " + a + " to the power of " + b);
+		}
+		double c = 1;
+		double d = a;
+		for(int i = 1; i < b; i++) {
+			c = a * d;
+			a = c;
+		}
+		return c;
 	}
+	
 	public static int factorial(int a) {
-		for(int i = 0; i > a; i++) {
-			
+		if(a < 0) {
+			throw new IllegalArgumentException("Cannot find the factorial of a negative number");
+		}
+		int b = 1;
+		int c = 1;
+		for(int i = 1; i <= a; i++) {
+			c = b * i;
+			b = c;
+		}
+		return c;
+	}
+
+	public static boolean isPrime(int a) {
+		boolean primeOrNot = false;
+		int i = a;
+		while(primeOrNot = false && i > 0) {
+			if(isDivisibleBy(a, i) == true) {
+				i--;
+			}
+			else {
+				primeOrNot = true;
+			}
+		}
+		return primeOrNot;
+	}
+	
+	public static int gcf(int a, int b) {
+		int c = 0;
+		for(int i = 1; i < max(a, b); i++) {
+			if(a % i == 0 && b % i == 0) {
+				c = i;
+				}
+			}
+		return c;
+		}
+	public static double sqrt(double a) {
+		if(a < 0) {
+			throw new IllegalArgumentException("Cannot find the square root of a negative number");
+		}
+		double b = 0;
+		for(double i = 0; i * i <= a; i += .005) {
+			b = i;
+		}
+		double c = ( (0.5) * ((a / b) + b));
+		return round2(c);
+	}
+	public static String quadForm(int a, int b, int c) {
+		double d = discriminant(a, b, c);
+		if(d < 0) {
+			return "no real roots";
+		}
+		else {
+		double e = ((-1 * b) + (sqrt(d))) / (2 * a);
+		double f = ((-1 * b) - (sqrt(d))) / (2 * a);
+		if(d > 0) {
+			return String.valueOf(round2(e)) + " and " + String.valueOf(round2(f));
+		}
+		else {
+			return String.valueOf(round2(e));
 		}
 	}
-	public static boolean isPrime(int a) {
-		
 	}
-	public static int gcf(int a, int b) {
-		
-	}
-	public static double sqrt(double a) {
-		
-	}*/
+}
